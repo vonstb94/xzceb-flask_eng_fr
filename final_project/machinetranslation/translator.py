@@ -1,3 +1,6 @@
+
+'''Translation Function'''
+
 #import json
 import os
 from ibm_watson import LanguageTranslatorV3
@@ -20,6 +23,8 @@ language_translator.set_service_url(url)
 
 def english_to_french(english_text):
 
+    '''English to French Translation Function'''
+
     french_text = ''
     if len(english_text) > 0:
         translation = language_translator.translate(
@@ -29,6 +34,8 @@ def english_to_french(english_text):
     return french_text
 
 def french_to_english(french_text):
+
+    '''French to English Translation Function'''
 
     english_text = ''
 
